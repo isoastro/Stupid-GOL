@@ -13,11 +13,11 @@ module GOLPixel(out, a, b, c, d, e, f, g, h);
 	not notH(nH, h);
 	
 	and and0(out0, nA, nB, nC, nD, nE, g, h);
-	and and1(out1, nA, nB, nC, nD, f, G, h);
+	and and1(out1, nA, nB, nC, nD, f, nG, h);
 	and and2(out2, nA, nB, nC, nD, f, g, nH);
 	and and3(out3, nA, nB, nC, nD, e, nF, h);
 	and and4(out4, nA, nB, nC, e, nF, g, nH);
-	and and5(out5, nA, nB, nC, e, f, G, nH);
+	and and5(out5, nA, nB, nC, e, f, nG, nH);
 	and and6(out6, nA, nB, nC, d, nE, nF, h);
 	and and7(out7, nA, nB, nC, d, nE, g, nH);
 	and and8(out8, nA, nB, nC, d, nE, f, nG);
@@ -43,31 +43,31 @@ module GOLPixel(out, a, b, c, d, e, f, g, h);
 	and and28(out28, nA, nB, nD, e, nF, g, nH);
 	and and29(out29, nA, nC, nD, e, nF, g, nH);
 	and and30(out30, nB, nC, nD, e, nF, g, nH);
-	and and31(out31, nA, nB, nD, e, f, G, nH);
-	and and32(out32, nA, nC, nD, e, f, G, nH);
-	and and33(out33, nB, nC, nD, e, f, G, nH);
+	and and31(out31, nA, nB, nD, e, f, nG, nH);
+	and and32(out32, nA, nC, nD, e, f, nG, nH);
+	and and33(out33, nB, nC, nD, e, f, nG, nH);
 	and and34(out34, nA, nB, d, nE, nF, g, nH);
 	and and35(out35, nA, nC, d, nE, nF, g, nH);
 	and and36(out36, nB, nC, d, nE, nF, g, nH);
-	and and37(out37, nA, nB, d, nE, f, G, nH);
-	and and38(out38, nA, nC, d, nE, f, G, nH);
-	and and39(out39, nB, nC, d, nE, f, G, nH);
-	and and40(out40, nA, nB, d, e, nF, G, nH);
-	and and41(out41, nA, nC, d, e, nF, G, nH);
-	and and42(out42, nB, nC, d, e, nF, G, nH);
+	and and37(out37, nA, nB, d, nE, f, nG, nH);
+	and and38(out38, nA, nC, d, nE, f, nG, nH);
+	and and39(out39, nB, nC, d, nE, f, nG, nH);
+	and and40(out40, nA, nB, d, e, nF, nG, nH);
+	and and41(out41, nA, nC, d, e, nF, nG, nH);
+	and and42(out42, nB, nC, d, e, nF, nG, nH);
 	and and43(out43, nA, c, nD, nE, nF, g, nH);
 	and and44(out44, nB, c, nD, nE, nF, g, nH);
-	and and45(out45, nA, c, nD, nE, f, G, nH);
-	and and46(out46, nB, c, nD, nE, f, G, nH);
-	and and47(out47, nA, c, nD, e, nF, G, nH);
-	and and48(out48, nB, c, nD, e, nF, G, nH);
-	and and49(out49, nA, c, d, nE, nF, G, nH);
-	and and50(out50, nB, c, d, nE, nF, G, nH);
+	and and45(out45, nA, c, nD, nE, f, nG, nH);
+	and and46(out46, nB, c, nD, nE, f, nG, nH);
+	and and47(out47, nA, c, nD, e, nF, nG, nH);
+	and and48(out48, nB, c, nD, e, nF, nG, nH);
+	and and49(out49, nA, c, d, nE, nF, nG, nH);
+	and and50(out50, nB, c, d, nE, nF, nG, nH);
 	and and51(out51, b, nC, nD, nE, nF, g, nH);
-	and and52(out52, b, nC, nD, nE, f, G, nH);
-	and and53(out53, b, nC, nD, e, nF, G, nH);
-	and and54(out54, b, nC, d, nE, nF, G, nH);
-	and and55(out55, b, c, nD, nE, nF, G, nH);
+	and and52(out52, b, nC, nD, nE, f, nG, nH);
+	and and53(out53, b, nC, nD, e, nF, nG, nH);
+	and and54(out54, b, nC, d, nE, nF, nG, nH);
+	and and55(out55, b, c, nD, nE, nF, nG, nH);
 
 	or or0(out, out0, out1, out2, out3, out4, out5, out6, out7, 
 	out8, out9, out10, out11, out12, out13, out14, out15, 
@@ -76,5 +76,6 @@ module GOLPixel(out, a, b, c, d, e, f, g, h);
 	out32, out33, out34, out35, out36, out37, out38, out39, 
 	out40, out41, out42, out43, out44, out45, out46, out47, 
 	out48, out49, out50, out51, out52, out53, out54, out55);
+
 	
 endmodule
